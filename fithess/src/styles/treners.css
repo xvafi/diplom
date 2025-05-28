@@ -1,0 +1,545 @@
+.treners-staff {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.treners-staff-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+  padding: 6px 0;
+}
+.treners-filter-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 6px 0;
+}
+.treners-staff-title {
+  font-size: 4em;
+  font-weight: 600;
+}
+.treners-staff-img,
+.treners-filter-img {
+  width: 36px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.treners-staff-img:hover {
+  background-color: #ccccccfa;
+}
+.filter-active {
+  background-color: #b9a3d3fa;
+}
+.filter-active:hover {
+  background-color: #a372dbfa;
+}
+
+.filter,
+.treners-filter {
+  width: 100%;
+  display: none;
+  transition: all 3s;
+  margin: 30px 0;
+  opacity: 0;
+}
+.filter-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1400px;
+  gap: 30px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #cccccc62;
+  padding: 10px;
+}
+.filter-block-title {
+  font-size: 4em;
+  font-weight: 600;
+}
+.filter-category-title {
+  font-size: 3.5em;
+  font-weight: 600;
+}
+.filter-category-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.filter-category-item,
+.filter-gender-item,
+.filter-gender-win-item,
+.filter-category-win-item {
+  font-size: 2.5em;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #2d015fe7;
+}
+.filter-category-item:hover,
+.filter-gender-item:hover,
+.filter-gender-win-item:hover,
+.filter-category-win-item:hover {
+  background-color: #b9a3d3fa;
+}
+.gender-item-active,
+.gender-item-win-active,
+.category-item-active,
+.category-win-item-active {
+  background-color: #a372dbfa;
+  color: white;
+}
+
+/* Ползунок */
+.input-range-row {
+  padding: 10px;
+}
+.value {
+  font-size: 2.5em;
+  width: 30px;
+}
+/* Range Slider */
+.input-ranges[type="range"] {
+  width: 260px;
+  height: 30px;
+  overflow: hidden;
+  outline: none;
+}
+
+.input-ranges[type="range"],
+.input-ranges[type="range"]::-webkit-slider-runnable-track,
+.input-ranges[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: none;
+}
+
+.input-ranges[type="range"]::-webkit-slider-runnable-track {
+  width: 200px;
+  height: 2px;
+  border-radius: 20px;
+  background: var(--color-headline);
+}
+
+.input-ranges[type="range"]:nth-child(2)::-webkit-slider-runnable-track {
+  background: #ccccccfa;
+  height: 2px;
+  border-radius: 20px;
+}
+
+.input-ranges[type="range"]::-webkit-slider-thumb {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  margin-top: -7px;
+  background: #a372dbfa;
+  border: 1px solid var(--color-headline);
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+/* Кнопки при наведении */
+.input-ranges[type="range"]::-webkit-slider-thumb:hover {
+  background: #2d015fe7;
+  border: 1px solid var(--color-primary);
+  outline: 0.5px solid var(--color-primary);
+}
+
+.input-ranges[type="range"]::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}
+
+.input-ranges[type="range"]:nth-child(1)::-webkit-slider-thumb {
+  z-index: 2;
+}
+
+.rangeslider {
+  font-family: sans-serif;
+  font-size: 14px;
+  position: relative;
+  height: 20px;
+  width: 260px;
+  display: inline-block;
+  margin-top: -5px;
+}
+
+.rangeslider input {
+  position: absolute;
+}
+
+/* Стили для "ползунка" */
+.slider {
+  position: absolute;
+  top: 0;
+  height: 10px;
+  background: #b9a3d3fa; /* Цвет ползунка */
+  margin-top: 10px;
+  border-radius: 5px;
+  pointer-events: none; /* Запрет на взаимодействие с этим элементом */
+}
+/*  */
+.filter-category-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.filter-block-btn,
+.filter-block-btn-win {
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 3em;
+  background-color: #a372dbfa;
+  border-radius: 20px;
+  color: black;
+  transition: all 0.3s;
+}
+.filter-block-btn:hover,
+.filter-block-btn-win:hover {
+  color: white;
+  background-color: #2d015fe7;
+}
+.amount-treners {
+  font-size: 1em;
+}
+.block-search {
+  background-color: #ccccccfa;
+  border-radius: 20px;
+}
+.treners-staff-search-img {
+  position: absolute;
+  width: 22px;
+  margin-left: 20px;
+}
+.treners-staff-search {
+  position: relative;
+  background: none;
+  width: 100%;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 3em;
+  font-weight: 300;
+  padding: 2px 40px;
+}
+.treners-staff-search:focus {
+  background-color: #b9a3d3fa;
+  outline: none;
+}
+.personal-treners,
+.groups-treners {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin: 20px auto;
+}
+.personal-treners-block,
+.groups-treners-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.personal-treners-title,
+.groups-treners-title {
+  font-size: 4em;
+  font-weight: 600;
+}
+.personal-treners-img,
+.groups-treners-img {
+  width: 14px;
+}
+.personal-treners-content,
+.groups-treners-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+}
+.personal-treners-content::-webkit-scrollbar,
+.groups-treners-content::-webkit-scrollbar {
+  height: 0;
+  scroll-behavior: smooth;
+}
+.personal-treners-card,
+.groups-treners-card,
+.personal-treners-card-all {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+  background-color: white;
+}
+.personal-treners-card-img,
+.groups-treners-card-img {
+  width: inherit;
+  border-radius: 20px;
+}
+.personal-treners-block-img,
+.groups-treners-block-img {
+  position: relative;
+  width: 260px;
+  /* height: 280px; */
+  border-radius: 20px;
+  background-color: gray;
+}
+.personal-treners-card-name,
+.groups-treners-card-name {
+  font-size: 3em;
+}
+.personal-treners-card-profile {
+  font-size: 2.5em;
+  color: rgb(117, 117, 117);
+}
+.personal-treners-card-experience {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-size: 2.5em;
+  background-color: #b9a3d3fa;
+  border-radius: 20px;
+  color: rgb(83, 83, 83);
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.personal-treners-card-years,
+.personal-treners-card-yearsword {
+  font-size: 1em;
+  color: #2d015fe7;
+}
+
+.groups-treners-block-img {
+  width: 200px;
+  /* height: 220px; */
+}
+
+@media screen and (max-width: 1500px) {
+  .treners-staff-block,
+  .personal-treners,
+  .groups-treners,
+  .filter-block {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .treners-staff-block,
+  .personal-treners,
+  .groups-treners,
+  .filter-block {
+    width: 1000px;
+    gap: 20px;
+  }
+  .treners-staff-title,
+  .personal-treners-title,
+  .groups-treners-title,
+  .filter-block-title,
+  .accordion-tab-link-title {
+    font-size: 28px;
+  }
+  .filter-category-title,
+  .treners-staff-title {
+    font-size: 24px;
+  }
+  .treners-staff-search,
+  .personal-treners-card-name,
+  .groups-treners-card-name,
+  .filter-block-btn-win {
+    font-size: 20px;
+  }
+  .personal-treners-card-profile,
+  .personal-treners-card-years {
+    font-size: 18px;
+  }
+  .personal-treners-block-img {
+    width: 220px;
+  }
+  .treners-ul-content {
+    gap: 0;
+  }
+  .personal-treners-card-all {
+    padding: 10px;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .treners-staff-block,
+  .personal-treners,
+  .groups-treners,
+  .filter-block {
+    width: 800px;
+  }
+  .treners-staff-title,
+  .personal-treners-title,
+  .groups-treners-title,
+  .filter-block-title,
+  .accordion-tab-link-title {
+    font-size: 24px;
+  }
+  .personal-treners-block-img,
+  .groups-treners-block-img {
+    width: 190px;
+  }
+  .personal-treners-card,
+  .groups-treners-card,
+  .personal-treners-card-all {
+    gap: 14px;
+  }
+  .filter-block-btn {
+    font-size: 20px;
+  }
+  .filter-category-item,
+  .filter-gender-item,
+  .filter-gender-win-item,
+  .filter-category-win-item {
+    font-size: 18px;
+  }
+  .window-treners-ul {
+    gap: 10px;
+    padding: 20px;
+  }
+  .treners-staff-block,
+  .personal-treners,
+  .groups-treners,
+  .filter-block {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .treners-staff-block,
+  .personal-treners,
+  .groups-treners,
+  .filter-block {
+    width: 600px;
+  }
+  .treners-staff-title,
+  .personal-treners-title,
+  .groups-treners-title,
+  .filter-block-title,
+  .accordion-tab-link-title,
+  .window-login-title {
+    font-size: 20px;
+  }
+  .personal-treners-card,
+  .groups-treners-card,
+  .personal-treners-card-all {
+    gap: 10px;
+    padding: 12px;
+  }
+  .treners-staff-search,
+  .personal-treners-card-name,
+  .groups-treners-card-name,
+  .filter-block-btn-win,
+  .personal-treners-card-experience,
+  .filter-block-btn {
+    font-size: 18px;
+  }
+  .filter-category-title,
+  .treners-staff-title {
+    font-size: 20px;
+  }
+  .filter-category-item,
+  .filter-gender-item,
+  .filter-gender-win-item,
+  .filter-category-win-item {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .treners-staff-block,
+  .personal-treners,
+  .groups-treners,
+  .filter-block {
+    width: 500px;
+  }
+  .treners-staff-title,
+  .personal-treners-title,
+  .groups-treners-title,
+  .filter-block-title,
+  .accordion-tab-link-title,
+  .window-login-title,
+  .treners-card-text {
+    font-size: 18px;
+  }
+  .treners-staff-search,
+  .personal-treners-card-name,
+  .groups-treners-card-name,
+  .filter-block-btn-win,
+  .personal-treners-card-experience,
+  .filter-block-btn {
+    font-size: 16px;
+  }
+  .personal-treners-block-img,
+  .groups-treners-block-img {
+    width: 150px;
+  }
+  .personal-treners-card-profile,
+  .personal-treners-card-years,
+  .value {
+    font-size: 16px;
+  }
+  .filter-category-title,
+  .treners-staff-title {
+    font-size: 18px;
+  }
+  .filter-category-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filter-category-block {
+    gap: 10px;
+  }
+  .input-range-row {
+    flex-direction: row;
+  }
+  .treners-filter {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .treners-staff-block,
+  .treners-staff-block,
+  .personal-treners,
+  .groups-treners {
+    width: 400px;
+  }
+  .personal-treners-block-img,
+  .groups-treners-block-img {
+    width: 120px;
+  }
+  .personal-treners-card-experience,
+  .personal-treners-card-years {
+    font-size: 14px;
+  }
+  .treners-staff-img,
+  .treners-filter-img {
+    width: 30px;
+  }
+  .personal-treners-card-profile,
+  .personal-treners-card-years,
+  .value {
+    font-size: 14px;
+  }
+  .filter-block {
+    /* width: -webkit-fill-available; */
+  }
+  .rangeslider,
+  .input-ranges[type="range"] {
+    width: 210px;
+  }
+}

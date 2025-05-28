@@ -1,0 +1,193 @@
+.settings {
+  width: 100%;
+}
+.settings-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #b9a3d3fa;
+}
+
+.settings-item-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+.settings-item-block:hover {
+  background-color: #a372dbfa;
+}
+.settings-item-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.settings-item-content-img {
+  height: 26px;
+}
+.settings-item-content-title {
+  font-size: 3em;
+}
+.settings-item-img {
+  height: 14px;
+}
+.check-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.check-login-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.check-login-title {
+  font-size: 3em;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 10px;
+}
+.check-login-title:hover {
+  background-color: #b9a3d3fa;
+}
+.my-programm-block {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+  flex-direction: column;
+}
+.my-programm {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+  background-color: #c7c7c7fa;
+  border-radius: 20px;
+}
+.info-programm,
+.info-programm span {
+  font-size: 24px;
+}
+/* .first-info { */
+/* width: 25%; */
+/* } */
+/* .second-info { */
+/* width: 25%; */
+/* } */
+/* .three-info { */
+/* width: 10%; */
+/* } */
+/* .four-info { */
+/* width: 20%; */
+/* } */
+/* .five-info { */
+/* width: 20%; */
+/* } */
+.six-info {
+}
+@media screen and (max-width: 1500px) {
+  .check-login-block {
+    width: auto;
+    padding: 10px 0;
+  }
+  .settings-block {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .settings-block {
+    width: 1000px;
+  }
+  .my-programm-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .my-programm {
+    width: auto;
+    flex-direction: column;
+    align-items: start;
+    padding: 15px;
+    gap: 4px;
+  }
+  .info-programm {
+    font-size: 20px;
+  }
+  .del-program {
+    width: 16px;
+  }
+  .six-info {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .settings-block {
+    width: 800px;
+  }
+  .settings-item-content-title {
+    font-size: 22px;
+  }
+  .info-programm,
+  .info-programm span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .settings-block {
+    width: 600px;
+  }
+  .settings-item-content-title,
+  .check-login-title {
+    font-size: 20px;
+  }
+  .td-prime,
+  .table-program td {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .settings-block {
+    width: 500px;
+  }
+  .settings-item-content-title,
+  .check-login-title {
+    font-size: 18px;
+  }
+  .info-programm,
+  .info-programm span {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .settings-block {
+    width: 400px;
+  }
+  .settings-item-content-title,
+  .check-login-title {
+    font-size: 16px;
+  }
+}

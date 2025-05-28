@@ -1,0 +1,248 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin: 20px auto;
+  gap: 30px;
+}
+.accordion-tab {
+  display: flex;
+  flex-direction: column;
+}
+.accordion-tab-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.accordion-tab-link:hover {
+  background-color: #b9a3d3fa;
+}
+.accordion-tab-link-title {
+  font-size: 3.8em;
+  font-weight: 600;
+}
+.accordion-tab-link-img {
+  height: 20px;
+}
+.accordion-tab-content {
+  display: none;
+}
+.content-active {
+  display: flex;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-control-program {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control-program label {
+  font-size: 3em;
+}
+.form-control-program input,
+.form-control-program select {
+  font-size: 2.8em;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+.content-time {
+  display: flex;
+  flex-direction: row;
+}
+.select-program,
+.select-gender,
+.select-post {
+  font-size: 2.8em;
+}
+.option-treners,
+.option-program,
+.option-gender,
+.option-post {
+  font-size: 0.8em;
+}
+.form-control-radio {
+  align-items: flex-start;
+}
+.form-radio {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.form-radio-text {
+  font-size: 2.5em;
+}
+.program-textarea {
+  font-size: 2.5em;
+  padding: 10px;
+  height: 200px;
+  border-radius: 20px;
+  resize: vertical;
+  max-height: 500px;
+}
+.form-control-btn {
+  font-size: 2.5em;
+  padding: 10px 8px;
+  border-radius: 20px;
+  border: none;
+  background-color: #b9a3d3fa;
+  font-weight: 600;
+}
+.form-control-btn:hover {
+  background-color: rgb(109, 31, 182);
+  color: white;
+}
+
+.active {
+  display: flex;
+}
+
+.link-active {
+  background-color: #814ac0e7;
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+
+.tab-content-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.content-users-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  background-color: #f2e6ffe7;
+  border-radius: 20px;
+  gap: 20px;
+}
+.users-card-name,
+.users-card-phone,
+.users-card-tarrif,
+.users-card-dateToday,
+.users-card-dateNext,
+.users-card-timing {
+  font-size: 2.5em;
+}
+.users-card-timing-span {
+  font-size: 1em;
+}
+.users-card-name {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1500px) {
+  .accordion {
+    width: 1200px;
+  }
+  .content-time {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .accordion {
+    width: 1000px;
+  }
+  .accordion-tab-link-title {
+    font-size: 26px;
+  }
+  .form-control-program label,
+  .form-control-program input,
+  .form-control-program select {
+    font-size: 20px;
+    padding: 6px 10px;
+  }
+  .form-control-program {
+    gap: 4px;
+    padding: 6px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .accordion {
+    width: 800px;
+  }
+  .form-control-program label,
+  .form-control-program input,
+  .form-control-program select,
+  .form-control-btn {
+    font-size: 18px;
+  }
+  .program-textarea {
+    height: 130px;
+  }
+  .accordion-tab-link-title {
+    font-size: 22px;
+  }
+  .users-card-name,
+  .users-card-phone,
+  .users-card-tarrif,
+  .users-card-dateToday,
+  .users-card-dateNext,
+  .users-card-timing {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .accordion {
+    width: 600px;
+  }
+  .form-control-program label,
+  .form-control-program input,
+  .form-control-program select,
+  .form-control-btn {
+    font-size: 16px;
+  }
+  .accordion-tab-link-title {
+    font-size: 18px;
+  }
+  .program-textarea {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .accordion {
+    width: 500px;
+  }
+  .content-users-card {
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .accordion {
+    width: 400px;
+  }
+  .content-users-card {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .form-control-program label,
+  .form-control-program input,
+  .form-control-program select,
+  .form-control-btn,
+  .form-radio-text {
+    font-size: 14px;
+  }
+  .program-textarea {
+    height: 90px;
+  }
+  .accordion-tab-link-img {
+    height: 10px;
+  }
+}

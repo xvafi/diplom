@@ -1,0 +1,300 @@
+.club-pass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.club-pass-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 1400px;
+  background-color: rgb(109, 31, 182);
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+}
+.club-pass-img {
+  width: 50px;
+}
+.club-pass-note {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+/* Поддержка */
+.support {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 1400px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+.support-title {
+  font-size: 4em;
+  font-weight: 600;
+}
+.support-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.support-btn-title {
+  font-size: 2.5em;
+  color: #2d015fe7;
+  font-weight: 600;
+}
+.support-btn-img {
+  width: 14px;
+}
+.support-img {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 120px;
+}
+
+.treners {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin: 20px auto;
+}
+.treners-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.treners-title {
+  font-size: 4em;
+  font-weight: 600;
+}
+.treners-img {
+  width: 14px;
+}
+.treners-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+}
+.treners-content::-webkit-scrollbar {
+  height: 0;
+  scroll-behavior: smooth;
+}
+.treners-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+  background-color: white;
+}
+.treners-card-img {
+  width: inherit;
+  border-radius: 20px;
+}
+.treners-block-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: gray;
+}
+.treners-card-name {
+  font-size: 3em;
+}
+
+/* Груповые программы */
+.programs {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+  margin: 20px auto;
+}
+.programs-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.programs-title {
+  font-size: 4em;
+  font-weight: 600;
+}
+.programs-img {
+  width: 14px;
+}
+.programs-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+}
+.programs-content::-webkit-scrollbar {
+  height: 0;
+  scroll-behavior: smooth;
+}
+
+.record-btn {
+  display: flex;
+  justify-content: center;
+  width: 1400px;
+  border-radius: 20px;
+  background-color: rgb(109, 31, 182);
+  margin: 0 auto;
+  font-size: 4em;
+  color: white;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+  .club-pass-block,
+  .support,
+  .treners,
+  .programs,
+  .record-btn {
+    width: 1200px;
+  }
+  .treners-card-name {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .club-pass-block,
+  .support,
+  .treners,
+  .programs,
+  .record-btn {
+    width: 1000px;
+  }
+  .club-pass-note {
+    font-size: 28px;
+  }
+  .club-pass-img {
+    width: 44px;
+  }
+  .support-title,
+  .treners-title,
+  .programs-title,
+  .record-btn {
+    font-size: 28px;
+  }
+  .treners-block-img {
+    width: 180px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .club-pass-block,
+  .support,
+  .treners,
+  .programs,
+  .record-btn {
+    width: 800px;
+  }
+  .club-pass-note {
+    font-size: 22px;
+  }
+  .club-pass-img {
+    width: 34px;
+  }
+  .support-title,
+  .treners-title,
+  .programs-title,
+  .record-btn {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .club-pass-block,
+  .support,
+  .treners,
+  .programs,
+  .record-btn {
+    width: 600px;
+  }
+  .club-pass-note {
+    font-size: 20px;
+  }
+  .treners-block-img {
+    width: 160px;
+  }
+  .treners-card {
+    padding: 10px;
+  }
+  /* .club-pass-note { */
+  /* font-size: 22px; */
+  /* } */
+  /* .club-pass-img { */
+  /* width: 34px; */
+  /* } */
+  .support-title,
+  .treners-title,
+  .programs-title,
+  .record-btn {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .club-pass-block,
+  .support,
+  .treners,
+  .programs,
+  .record-btn {
+    width: 500px;
+  }
+  .club-pass-img {
+    width: 28px;
+  }
+  .support-title,
+  .treners-title,
+  .programs-title,
+  .record-btn,
+  .support-btn-title,
+  .treners-card-name,
+  .programs-card-title {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .club-pass-block,
+  .support,
+  .treners,
+  .programs,
+  .record-btn {
+    width: 400px;
+  }
+  .club-pass-img {
+    width: 28px;
+  }
+  .club-pass-note {
+    font-size: 18px;
+  }
+  .support-title,
+  .treners-title,
+  .programs-title,
+  .record-btn,
+  .support-btn-title,
+  .treners-card-name,
+  .programs-card-title {
+    font-size: 16px;
+  }
+  .treners-block-img {
+    width: 130px;
+  }
+  .support-img {
+    top: 10px;
+  }
+}
